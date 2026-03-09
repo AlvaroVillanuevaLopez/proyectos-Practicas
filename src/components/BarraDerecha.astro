@@ -1,0 +1,106 @@
+---
+import Foto from "../assets/foto.png"
+import Linkedin from "../assets/linkedin.png"
+import Location from "../assets/location.png"
+import Mail from "../assets/mail.png"
+import Phone from "../assets/phone.png"
+---
+<div class="container">
+    <img src={Foto.src} alt="Foto de perfil">
+    <h3>CONTACTO</h3>
+    <hr>
+    <div id="secion-contactos">
+        <img src={Location.src} alt=""/>
+        <p>Madrid, España</p>
+    </div>
+    <div id="secion-contactos">
+        <img src={Phone.src} alt=""/>
+        <p>+34 650 37 05 36</p>
+    </div>
+    <div id="secion-contactos">
+        <img src={Mail.src} alt=""/>
+        <p>alvarovillanuevalopez@gmail.com</p>
+    </div>
+    <div id="secion-contactos">
+        <img src={Linkedin.src} alt=""/>
+        <p>Álvaro Villanueva López</p>
+    </div>
+    <h3>PERFIL PROFESIONAL</h3>
+    <hr>
+    <p id="texto-perfil">Aficionado al ámbito de la informática, en búsqueda de una oportunidad para desarrollarme profesional y personalmente. 
+       Soy una persona interesada por el conocimiento, comprometido, respetuoso y disciplinado. 
+       Me motiva realizar un buen trabajo, aprendiendo de mis errores.
+    </p>
+    <h3>HABILIDADES</h3>
+    <hr>
+    <p>Trabajo en equipo</p>
+    <p>Creatividad</p>
+    <p>Disciplina</p>
+    <p>Asertividad</p>
+    <h3>TECNOLOGÍAS</h3>
+    <hr>
+    <p>Google Drive</p>
+    <p>Word, Excel</p>
+    <p>SQL</p>
+    <p>Java y PHP</p>
+    <p>Automatización con la IA</p>
+    <p>HTML, jQuery CSS y JavaScript</p>
+    <h3>IDIOMAS</h3>
+    <hr>
+    <p>Español: Nativo
+        <br>
+        Inglés: Nivel Cambridge B1 y estancia en el extranjero
+    </p>
+</div>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Sans-serif;
+    }
+
+    .container {
+        background-color: #0074B7; 
+        width: 300px;
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+        }
+    }
+    .container p {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .container h3 {
+        color: white;
+        font-weight: bold;
+	}
+
+	.container hr {
+		height: 5px;
+        background-color: white;
+		margin: 10px 2.5px;
+	}
+
+	#texto-perfil{
+		text-align: justify;
+	}
+    #secion-contactos{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+</style>
