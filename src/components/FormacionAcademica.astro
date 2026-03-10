@@ -1,21 +1,27 @@
+---
+import {FECHAS} from "../constantes/constParteBlanca.js"
+import {ESTUDIOS} from "../constantes/constParteBlanca.js"
+import {CENTROS} from "../constantes/constParteBlanca.js"
+import {SECTIONS} from "../constantes/constParteBlanca.js"
+---
 <div id="contenedor">
-    <h2>FORMACIÓN ACADÉMICA</h2>
+    <h2>{SECTIONS.s2}</h2>
     <hr>
     <div class="fechas">
-        <p>2024-2026</p>
-        <p>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB</p>
+        <p>{FECHAS.f4}</p>
+        <p>{ESTUDIOS.e1}</p>
     </div>
-    <p class="centro">IES Domenico Scarlatti</p>
+    <p class="centro">{CENTROS.ce1}</p>
     <div class="fechas">
-        <p>2022-2024</p>
-        <p>TÉCNICO SUPERIOR EN ADMINISTRADOR DE SISTEMAS EN RED</p>
+        <p>{FECHAS.f5}</p>
+        <p>{ESTUDIOS.e2}</p>
     </div>
-    <p class="centro">IES Pio Baroja</p>
+    <p class="centro">{CENTROS.ce2}</p>
     <div class="fechas">
-        <p>2020-2022</p>    
-        <p>BACHILLERATO ESPECIALIDAD CIENCIAS TECNOLÓGICAS</p>
+        <p>{FECHAS.f6}</p>    
+        <p>{ESTUDIOS.e3}</p>
     </div>
-    <p class="centro">Colegio Bilingüe Valle del Miro</p>
+    <p class="centro">{CENTROS.ce3}</p>
 </div>
 <style>
     * {

@@ -1,22 +1,24 @@
 ---
 import qr1 from "../assets/qr1.png";
 import qr2 from "../assets/qr2.png";
+import {SECTIONS} from "../constantes/constParteBlanca.js"
+import {CERTIFICACIONES} from "../constantes/constParteBlanca.js"
 ---
 <div>
-    <h2>CERTIFICACIONES</h2>
+    <h2>{SECTIONS.s3}</h2>
     <hr>
     <div class="cursos-imagenes">
         <div class="cursos">
-            <p>CERTIFICATION SQL FROM CERO TO ADVANCED</p>
-            <p class="descripcion">Certificado Curso OpenWebinars</p>
+            <p>{CERTIFICACIONES.c1}</p>
+            <p class="descripcion">{CERTIFICACIONES.comun}</p>
         </div>
         <img src={qr1.src} alt="QR Certificación Curso">
     </div>
     <br>
     <div class="cursos-imagenes">
         <div class="cursos">
-            <p>CERTIFICATION PHP: EXPANDING CONCEPTS</p>
-            <p class="descripcion">Certificado Curso OpenWebinars</p>
+            <p>{CERTIFICACIONES.c2}</p>
+            <p class="descripcion">{CERTIFICACIONES.comun}</p>
         </div>
         <img src={qr2.src} alt="QR Certificación Curso">
     </div>
