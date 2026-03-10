@@ -1,110 +1,68 @@
 ---
-import { SECCIONES } from "../constantes/constBarraDerecha.js"
-import { CONTACTODES } from "../constantes/constBarraDerecha.js"
-import { PERFILPROFESIONALDES } from "../constantes/constBarraDerecha.js"
-import { HABILIDADESDES } from "../constantes/constBarraDerecha.js"
-import { TECNOLOGÍASDES } from "../constantes/constBarraDerecha.js"
-import { IDIOMASDES } from "../constantes/constBarraDerecha.js"
+import { SECCIONES, CONTACTODES, PERFILPROFESIONALDES, HABILIDADESDES, TECNOLOGÍASDES, IDIOMASDES } from "../constantes/constBarraDerecha.js"
 import Foto from "../assets/foto.png"
 import Linkedin from "../assets/linkedin.png"
 import Location from "../assets/location.png"
 import Mail from "../assets/mail.png"
 import Phone from "../assets/phone.png"
 ---
-<div class="container">
-    <img src={Foto.src} alt="Foto de perfil">
-    <h3>{SECCIONES.contacto}</h3>
-    <hr>
-    <div id="secion-contactos">
-        <img src={Location.src} alt=""/>
-        <p>{CONTACTODES.location}</p>
+
+<div class="bg-[#0074B7] w-full md:w-[300px] min-h-screen p-5 flex flex-col font-sans">
+    
+    <img src={Foto.src} alt="Foto de perfil" class="mb-4">
+
+    <h2 class="text-white font-bold">{SECCIONES.contacto}</h2>
+    <hr class="h-[5px] bg-white border-none my-[10px] mx-[2.5px]">
+    
+    <div class="space-y-2.5 mb-2.5">
+        <div class="flex flex-row gap-2.5 items-center">
+            <img src={Location.src} alt="" class="w-5 h-5 object-contain"/>
+            <p class="text-white leading-[1.4] m-0">{CONTACTODES.location}</p>
+        </div>
+        <div class="flex flex-row gap-2.5 items-center">
+            <img src={Phone.src} alt="" class="w-5 h-5 object-contain"/>
+            <p class="text-white leading-[1.4] m-0">{CONTACTODES.phone}</p>
+        </div>
+        <div class="flex flex-row gap-2.5 items-center">
+            <img src={Mail.src} alt="" class="w-5 h-5 object-contain"/>
+            <p class="text-white leading-[1.4] m-0">{CONTACTODES.mail}</p>
+        </div>
+        <div class="flex flex-row gap-2.5 items-center">
+            <img src={Linkedin.src} alt="" class="w-5 h-5 object-contain"/>
+            <p class="text-white leading-[1.4] m-0">{CONTACTODES.linekdin}</p>
+        </div>
     </div>
-    <div id="secion-contactos">
-        <img src={Phone.src} alt=""/>
-        <p>{CONTACTODES.phone}</p>
-    </div>
-    <div id="secion-contactos">
-        <img src={Mail.src} alt=""/>
-        <p>{CONTACTODES.mail}</p>
-    </div>
-    <div id="secion-contactos">
-        <img src={Linkedin.src} alt=""/>
-        <p>{CONTACTODES.linekdin}</p>
-    </div>
-    <h3>{SECCIONES.perfil_profesional}</h3>
-    <hr>
-    <p id="texto-perfil">{PERFILPROFESIONALDES.descripcion}
+
+    <h2 class="text-white font-bold">{SECCIONES.perfil_profesional}</h2>
+    <hr class="h-[5px] bg-white border-none my-[10px] mx-[2.5px]">
+    <p class="text-white leading-[1.4] mb-2.5 text-justify">
+        {PERFILPROFESIONALDES.descripcion}
     </p>
-    <h3>{SECCIONES.habilidades}</h3>
-    <hr>
-    <p>{HABILIDADESDES.equipo}</p>
-    <p>{HABILIDADESDES.creatividad}</p>
-    <p>{HABILIDADESDES.disciplina}</p>
-    <p>{HABILIDADESDES.asertividad}</p>
-    <h3>{SECCIONES.tecnologias}</h3>
-    <hr>
-    <p>{TECNOLOGÍASDES.google}</p>
-    <p>{TECNOLOGÍASDES.word}</p>
-    <p>{TECNOLOGÍASDES.sql}</p>
-    <p>{TECNOLOGÍASDES.java}</p>
-    <p>{TECNOLOGÍASDES.ia}</p>
-    <p>{TECNOLOGÍASDES.html}</p>
-    <h3>{SECCIONES.idiomas}</h3>
-    <hr>
-    <p>Español: Nativo
-        <br>
-        Inglés: Nivel Cambridge B1 y estancia en el extranjero
+
+    <h2 class="text-white font-bold">{SECCIONES.habilidades}</h2>
+    <hr class="h-[5px] bg-white border-none my-[10px] mx-[2.5px]">
+    <div class="text-white leading-[1.4] mb-2.5">
+        <p class="mb-2.5">{HABILIDADESDES.equipo}</p>
+        <p class="mb-2.5">{HABILIDADESDES.creatividad}</p>
+        <p class="mb-2.5">{HABILIDADESDES.disciplina}</p>
+        <p class="mb-2.5">{HABILIDADESDES.asertividad}</p>
+    </div>
+
+    <h2 class="text-white font-bold">{SECCIONES.tecnologias}</h2>
+    <hr class="h-[5px] bg-white border-none my-[10px] mx-[2.5px]">
+    <div class="text-white leading-[1.4] mb-2.5">
+        <p class="mb-2.5">{TECNOLOGÍASDES.google}</p>
+        <p class="mb-2.5">{TECNOLOGÍASDES.word}</p>
+        <p class="mb-2.5">{TECNOLOGÍASDES.sql}</p>
+        <p class="mb-2.5">{TECNOLOGÍASDES.java}</p>
+        <p class="mb-2.5">{TECNOLOGÍASDES.ia}</p>
+        <p class="mb-2.5">{TECNOLOGÍASDES.html}</p>
+    </div>
+
+    <h2 class="text-white font-bold">{SECCIONES.idiomas}</h2>
+    <hr class="h-[5px] bg-white border-none my-[10px] mx-[2.5px]">
+    <p class="text-white leading-[1.4] mb-2.5">
+        {IDIOMASDES.spanish} <br>
+        {IDIOMASDES.english}
     </p>
 </div>
-
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: Sans-serif;
-    }
-
-    .container {
-        background-color: #0074B7; 
-        width: 300px;
-        min-height: 100vh;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    @media (max-width: 768px) {
-        .container {
-            width: 100%;
-        }
-    }
-    .container p {
-        color: white;
-        font-size: 14px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-    }
-
-    .container h3 {
-        color: white;
-        font-weight: bold;
-	}
-
-	.container hr {
-		height: 5px;
-        background-color: white;
-		margin: 10px 2.5px;
-	}
-
-	#texto-perfil{
-		text-align: justify;
-	}
-    #secion-contactos{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-</style>

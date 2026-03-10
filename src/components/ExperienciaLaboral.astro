@@ -5,81 +5,51 @@ import { DESCRIPCIONES } from "../constantes/constParteBlanca.js"
 import { TRABAJOS } from "../constantes/constParteBlanca.js"
 import { TAREAS } from "../constantes/constParteBlanca.js"
 ---
-<div>
-    <h2>{SECTIONS.s1}</h2>
-    <hr>
-    <div class="fechas">
+<div class="m-0 p-0 box-border font-sans ml-[25px] mr-[10px] max-w-[705px] bg-white">
+    
+    <h2 class="font-normal">{SECTIONS.s1}</h2>
+    
+    <hr class="mb-[20px] h-[5px] bg-[#2B78B4] border-none">
+
+    <div class="flex ml-[10px] justify-between text-[#2B78B4] font-normal">
         <p>{FECHAS.f1}</p>
         <p>{TRABAJOS.tr1}</p>
     </div>
     <div>
         <p>{DESCRIPCIONES.d1}</p>
-        <ul>
-            <li>{TAREAS.t1}</li>
-            <li>{TAREAS.t2}</li>
-            <li>{TAREAS.t3}</li>
-            <li>{TAREAS.t4}</li>
+        <ul class="list-['-'] mb-[10px]">
+            <li class="pl-[30px] text-justify">{TAREAS.t1}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t2}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t3}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t4}</li>
         </ul>
     </div>
-    <div class="fechas">
+
+    <div class="flex ml-[10px] justify-between text-[#2B78B4] font-normal">
         <p>{FECHAS.f2}</p>
         <p>{TRABAJOS.tr2}</p>
     </div>
     <div class="texto-descriptivo">
         <p>{DESCRIPCIONES.d2}</p>
-        <ul>
-            <li>{TAREAS.t5}</li>
-            <li>{TAREAS.t6}</li>
-            <li>{TAREAS.t7}</li>
-            <li>{TAREAS.t8}</li>
+        <ul class="list-['-'] mb-[10px]">
+            <li class="pl-[30px] text-justify">{TAREAS.t5}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t6}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t7}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t8}</li>
         </ul>
     </div>
-    <div class="fechas">
+
+    <div class="flex ml-[10px] justify-between text-[#2B78B4] font-normal">
         <p>{FECHAS.f3}</p>
         <p>{TRABAJOS.tr3}</p>
     </div>
     <div class="texto-descriptivo">
         <p>{DESCRIPCIONES.d3}</p>
-        <ul>
-            <li>{TAREAS.t9}</li>
-            <li>{TAREAS.t10}</li>
-            <li>{TAREAS.t11}</li>
-            <li>{TAREAS.t12}</li>
+        <ul class="list-['-'] mb-[10px]">
+            <li class="pl-[30px] text-justify">{TAREAS.t9}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t10}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t11}</li>
+            <li class="pl-[30px] text-justify">{TAREAS.t12}</li>
         </ul>
     </div>
 </div>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: 25px;
-        margin-right: 10px;
-        max-width: 705px;
-        background-color: white;
-    }
-    h2{
-        font-weight: 400;   
-    }
-    hr{
-        margin-bottom: 20px;
-        height: 5px;
-        background-color: #2B78B4;
-    }
-    ul{
-        list-style: "-";
-        margin-bottom: 10px;
-    }
-    li{
-        padding-left: 30px;
-        text-align: justify;
-    }
-    .fechas{
-        display: flex;
-        margin-left: 10px;
-        justify-content: space-between;
-        color: #2B78B4;
-        font-weight: 400;
-    }
-</style>

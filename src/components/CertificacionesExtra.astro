@@ -4,57 +4,23 @@ import qr2 from "../assets/qr2.png";
 import {SECTIONS} from "../constantes/constParteBlanca.js"
 import {CERTIFICACIONES} from "../constantes/constParteBlanca.js"
 ---
-<div>
-    <h2>{SECTIONS.s3}</h2>
-    <hr>
-    <div class="cursos-imagenes">
-        <div class="cursos">
+<div class="m-0 p-0 box-border font-sans ml-[25px] mr-[10px] max-w-[705px] bg-white">
+    <h2 class="font-normal">{SECTIONS.s3}</h2>
+    
+    <hr class="mb-[20px] h-[5px] bg-[#2B78B4] border-none">
+
+    <div class="flex justify-between items-start">
+        <div class="flex flex-col ml-[10px] text-[#2B78B4] font-semibold">
             <p>{CERTIFICACIONES.c1}</p>
-            <p class="descripcion">{CERTIFICACIONES.comun}</p>
+            <p class="ml-[35px] mb-[5px] font-normal italic text-black">{CERTIFICACIONES.comun}</p>
         </div>
-        <img src={qr1.src} alt="QR Certificación Curso">
-    </div>
-    <br>
-    <div class="cursos-imagenes">
-        <div class="cursos">
+        <img src={qr1.src} alt="QR Certificación Curso" class="w-16 h-16"> </div>
+
+    <div class="h-4"></div> <div class="flex justify-between items-start">
+        <div class="flex flex-col ml-[10px] text-[#2B78B4] font-semibold">
             <p>{CERTIFICACIONES.c2}</p>
-            <p class="descripcion">{CERTIFICACIONES.comun}</p>
+            <p class="ml-[35px] mb-[5px] font-normal italic text-black">{CERTIFICACIONES.comun}</p>
         </div>
-        <img src={qr2.src} alt="QR Certificación Curso">
+        <img src={qr2.src} alt="QR Certificación Curso" class="w-16 h-16">
     </div>
 </div>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: 25px;
-        max-width: 705px;
-        background-color: white;
-        margin-right: 10px;
-    }
-    h2{
-        font-weight: 400;   
-    }
-    hr{
-        margin-bottom: 20px;
-        height: 5px;
-        background-color: #2B78B4;
-    }
-    .cursos{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-        color: #2B78B4;
-        font-weight: 600
-    }
-    .cursos-imagenes{
-        display: flex;
-        justify-content: space-between;
-    }
-    .descripcion{
-        margin-left: 35px;
-        margin-bottom: 5px;
-    }
-</style>
